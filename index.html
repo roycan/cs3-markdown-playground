@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown for High Schoolers</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">Learn Markdown!</h1>
+                <p class="subtitle">A simple guide and playground for high school students</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="section">
+        <section class="container" id="learn-markdown">
+            <h2 class="title is-3">Markdown Cheatsheet</h2>
+            <div class="columns is-multiline">
+                <article class="column is-half">
+                    <div class="box">
+                        <h3 class="title is-4">Headings</h3>
+                        <p>Use hash symbols (#) to create headings. More hashes mean smaller headings.</p>
+                        <pre><code># Heading 1
+## Heading 2
+### Heading 3</code></pre>
+                        <div class="content">
+                            <h1>Heading 1</h1>
+                            <h2>Heading 2</h2>
+                            <h3>Heading 3</h3>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="column is-half">
+                    <div class="box">
+                        <h3 class="title is-4">Text Styles</h3>
+                        <p>Make text **bold** using double asterisks or double underscores, and *italic* using single asterisks or single underscores. Use backticks for `inline code`.</p>
+                        <pre><code>**This is bold** or __This is bold__
+*This is italic* or _This is italic_
+`inline code`</code></pre>
+                        <div class="content">
+                            <p><b>This is bold</b> or <b>This is bold</b></p>
+                            <p><i>This is italic</i> or <i>This is italic</i></p>
+                            <p><code>inline code</code></p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="column is-half">
+                    <div class="box">
+                        <h3 class="title is-4">Blockquotes</h3>
+                        <p>Use the greater-than sign (>) to create blockquotes, great for citing sources or emphasizing text.</p>
+                        <pre><code>> This is a blockquote.
+> It can span multiple lines.</code></pre>
+                        <div class="content">
+                            <blockquote>
+                                <p>This is a blockquote.<br>It can span multiple lines.</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="column is-half">
+                    <div class="box">
+                        <h3 class="title is-4">Lists</h3>
+                        <p>Create ordered lists with numbers and unordered lists with asterisks (*), hyphens (-), or plus signs (+).</p>
+                        <pre><code>1. First item
+2. Second item
+* Unordered item 1
+* Unordered item 2</code></pre>
+                        <div class="content">
+                            <ol>
+                                <li>First item</li>
+                                <li>Second item</li>
+                            </ol>
+                            <ul>
+                                <li>Unordered item 1</li>
+                                <li>Unordered item 2</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="column is-half">
+                    <div class="box">
+                        <h3 class="title is-4">Code Blocks</h3>
+                        <p>For larger blocks of code, use three backticks (```) at the beginning and end.</p>
+                        <pre><code>```javascript
+function helloWorld() {
+  console.log("Hello, Markdown!");
+}
+```</code></pre>
+                        <div class="content">
+                            <pre><code>function helloWorld() {
+  console.log("Hello, Markdown!");
+}</code></pre>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="column is-half">
+                    <div class="box">
+                        <h3 class="title is-4">Links</h3>
+                        <p>Create links by putting the link text in square brackets and the URL in parentheses.</p>
+                        <pre><code>[Google](https://www.google.com)</code></pre>
+                        <div class="content">
+                            <p><a href="https://www.google.com">Google</a></p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="column is-half">
+                    <div class="box">
+                        <h3 class="title is-4">Images</h3>
+                        <p>Embed images using an exclamation mark, alt text in square brackets, and the image URL in parentheses.</p>
+                        <pre><code>![Bulma CSS](bulma.png)</code></pre>
+                        <div class="content">
+                            <div class="is-flex is-align-items-flex-start">
+                                <figure class="image is-inline-block mr-4" style="max-width: 128px; flex-shrink: 0;">
+                                    <img src="bulma.png" alt="Bulma CSS" style="width: 100%; height: auto; object-fit: contain;">
+                                </figure>
+                                <div class="is-flex-grow-1">
+                                    <p class="is-size-7 has-text-grey">
+                                        <span class="has-text-weight-semibold">Added by:</span> GamingHub-17<br>
+                                        <span class="has-text-weight-semibold">Posted in:</span> Bulma/Gallery Wild Rider Suit<br>
+                                        <span class="has-text-weight-semibold">Source:</span> 
+                                        <a href="https://dragonball.fandom.com/wiki/Bulma/Gallery?file=Bulma_manga.png" 
+                                           class="has-text-link is-size-7" target="_blank">
+                                            Dragon Ball Fandom Wiki
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="container" id="live-playground">
+            <h2 class="title is-3">Live Playground</h2>
+            <div class="columns">
+                <div class="column">
+                    <div class="field">
+                        <label class="label">Your Markdown</label>
+                        <div class="control">
+                            <textarea class="textarea" id="markdown-input" placeholder="Type your Markdown here..." rows="15"></textarea>
+                        </div>
+                        <button class="button is-info is-light mt-3" id="copy-button">Copy Markdown</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="field">
+                        <label class="label">Live Preview</label>
+                        <div class="box preview-panel" id="preview-output">
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>Created to help high school students learn Markdown.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
